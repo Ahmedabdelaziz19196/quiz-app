@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- normalize file -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <!-- font awesome -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!-- main style sheet -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Quizzy</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Quizzy</h1>
+                <div class="toggle">
+                    <input type="checkbox" class="checkbox" id="checkbox" />
+                    <label for="checkbox" class="checkbox-label">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <span class="ball"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="choose-page">
+                <p class="text">أخـتر مجـال :</p>
+                <div class="category">
+                    <button class="general">ثقافة عامة</button>
+                    <button class="islamic">ديني</button>
+                    <button class="geography">جغرافيا</button>
+                    <button class="history">تاريخ</button>
+                    <button class="movies">أفلام ومسلسلات</button>
+                    <button class="sports">رياضة</button>
+                    <button class="tech">تكنولوجيا</button>
+                    <button class="riddles">ذكاء / ألغاز</button>
+                </div>
+            </div>
+            <div class="quizz-area">
+                <h2 class="question">من هو النبي الذي صام أول مرة؟</h2>
+                <div class="answers">
+                    <p class="answer-1">فيكتور هوغو</p>
+                    <p class="answer-2">فيكتور هوغو</p>
+                    <p class="answer-3">فيكتور هوغو</p>
+                    <!-- <p class="answer-4">تايلاند</p> -->
+                </div>
+                <div class="submit">
+                    <button class="submit">تـأكيد</button>
+                </div>
+                <div class="count">
+                    <p class="time">30 : 00</p>
+                </div>
+
+                <div class="slider"></div>
+            </div>
+            <div class="result-area">
+                <div class="winner">
+                    <img
+                        src="images/istockphoto-1138018829-612x612edited.png"
+                        alt=""
+                    />
+                    <div class="result-text">
+                        <p class="text2">مبروك, كسبت اللعبة</p>
+                        <p class="winner-text">
+                            جاوبت علي <span class="answer"></span> من
+                            <span class="question"></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="average">
+                    <img src="images/hand.png" alt="" />
+                    <div class="result-text">
+                        <p class="text2">مبروك, فيه احسن</p>
+                        <p class="average-text">
+                            جاوبت علي <span class="answer"></span> من
+                            <span class="question"></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="loser">
+                    <img src="images/thumbs-down-sign_1f44e.png" alt="" />
+                    <div class="result-text">
+                        <p class="text2">للاسف خسرت حاول تاني</p>
+                        <p class="loser-text">
+                            جاوبت علي <span class="answer"></span> من
+                            <span class="question"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
