@@ -243,11 +243,13 @@ html {
                 }
                 &.correct {
                     border-color: #4caf50;
-                    color: #4caf50;
+                    background-color: #4caf50;
+                    color: black;
                 }
                 &.wrong {
                     border-color: #f44336;
-                    color: #f44336;
+                    background-color: #f44336;
+                    color: black;
                 }
             }
             p.general:hover {
