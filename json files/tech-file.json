@@ -1,0 +1,310 @@
+[
+    {
+        "question": "ما هي الشركة التي طورت نظام التشغيل 'أندرويد'؟",
+        "answer1": "آبل",
+        "answer2": "جوجل",
+        "answer3": "مايكروسوفت",
+        "correct": "جوجل"
+    },
+    {
+        "question": "ما هو أسرع معالج للهواتف الذكية من شركة آبل حتى عام 2023؟",
+        "answer1": "A15 Bionic",
+        "answer2": "A16 Bionic",
+        "answer3": "M1",
+        "correct": "A16 Bionic"
+    },
+    {
+        "question": "ما هي أول لعبة فيديو في التاريخ؟",
+        "answer1": "Pong",
+        "answer2": "Spacewar!",
+        "answer3": "Tetris",
+        "correct": "Spacewar!"
+    },
+    {
+        "question": "ما هو اسم أول كمبيوتر شخصي من آبل؟",
+        "answer1": "Apple I",
+        "answer2": "Macintosh",
+        "answer3": "Apple II",
+        "correct": "Apple I"
+    },
+    {
+        "question": "ما هي لغة البرمجة المستخدمة في تطوير تطبيقات iOS؟",
+        "answer1": "Java",
+        "answer2": "Swift",
+        "answer3": "Kotlin",
+        "correct": "Swift"
+    },
+    {
+        "question": "ما هو اسم الذكاء الاصطناعي الخاص بـ جوجل؟",
+        "answer1": "Alexa",
+        "answer2": "Bard",
+        "answer3": "Copilot",
+        "correct": "Bard"
+    },
+    {
+        "question": "ما هي تقنية الشحن اللاسلكي الأكثر انتشارًا؟",
+        "answer1": "Qi",
+        "answer2": "AirFuel",
+        "answer3": "PMA",
+        "correct": "Qi"
+    },
+    {
+        "question": "ما هو نظام التشغيل مفتوح المصدر الأكثر شهرة؟",
+        "answer1": "Windows",
+        "answer2": "macOS",
+        "answer3": "Linux",
+        "correct": "Linux"
+    },
+    {
+        "question": "ما هي الشركة التي تمتلك 'واتساب'؟",
+        "answer1": "فيسبوك (ميتا)",
+        "answer2": "جوجل",
+        "answer3": "مايكروسوفت",
+        "correct": "فيسبوك (ميتا)"
+    },
+    {
+        "question": "ما هو أول هاتف ذكي يعمل بنظام أندرويد؟",
+        "answer1": "HTC Dream",
+        "answer2": "Samsung Galaxy S",
+        "answer3": "Google Pixel",
+        "correct": "HTC Dream"
+    },
+    {
+        "question": "ما هي أقدم لغة برمجة لا تزال مستخدمة حتى اليوم؟",
+        "answer1": "Python",
+        "answer2": "Fortran",
+        "answer3": "C",
+        "correct": "Fortran"
+    },
+    {
+        "question": "ما هو اسم أول قرص صلب (HDD)؟",
+        "answer1": "IBM 350",
+        "answer2": "Seagate ST-506",
+        "answer3": "Western Digital WD25",
+        "correct": "IBM 350"
+    },
+    {
+        "question": "ما هي الشركة التي طورت معالج 'Ryzen'؟",
+        "answer1": "Intel",
+        "answer2": "AMD",
+        "answer3": "NVIDIA",
+        "correct": "AMD"
+    },
+    {
+        "question": "ما هو أسرع اتصال إنترنت لاسلكي حتى الآن؟",
+        "answer1": "Wi-Fi 5",
+        "answer2": "Wi-Fi 6",
+        "answer3": "Wi-Fi 6E",
+        "correct": "Wi-Fi 6E"
+    },
+    {
+        "question": "ما هو اسم أول كمبيوتر محمول من آبل؟",
+        "answer1": "MacBook Air",
+        "answer2": "PowerBook",
+        "answer3": "iBook",
+        "correct": "PowerBook"
+    },
+    {
+        "question": "ما هو اسم أول هاتف أيفون؟",
+        "answer1": "iPhone 1",
+        "answer2": "iPhone (2007)",
+        "answer3": "iPhone 3G",
+        "correct": "iPhone (2007)"
+    },
+    {
+        "question": "ما هو نظام التشغيل المستخدم في ساعات آبل الذكية؟",
+        "answer1": "watchOS",
+        "answer2": "Wear OS",
+        "answer3": "Tizen",
+        "correct": "watchOS"
+    },
+    {
+        "question": "من قدم أول نظارة واقع معزز تجارية؟",
+        "answer1": "مايكروسوفت (HoloLens)",
+        "answer2": "جوجل (Google Glass)",
+        "answer3": "آبل (ARKit)",
+        "correct": "مايكروسوفت (HoloLens)"
+    },
+    {
+        "question": "ما هو اسم أول لعبة 'بلاي ستيشن'؟",
+        "answer1": "Crash Bandicoot",
+        "answer2": "Tekken",
+        "answer3": "Ridge Racer",
+        "correct": "Ridge Racer"
+    },
+    {
+        "question": "ما هي أسرع ذاكرة تخزين في الهواتف حالياً؟",
+        "answer1": "eMMC",
+        "answer2": "UFS 3.1",
+        "answer3": "NVMe",
+        "correct": "UFS 3.1"
+    },
+    {
+        "question": "ما هو اسم أول كمبيوتر كمومي تجاري؟",
+        "answer1": "IBM Q",
+        "answer2": "Google Sycamore",
+        "answer3": "D-Wave One",
+        "correct": "D-Wave One"
+    },
+    {
+        "question": "ما هي الشركة التي طورت 'ChatGPT'؟",
+        "answer1": "Google",
+        "answer2": "OpenAI",
+        "answer3": "Microsoft",
+        "correct": "OpenAI"
+    },
+    {
+        "question": "ما هو اسم أول هاتف قابل للطي من سامسونج؟",
+        "answer1": "Galaxy Fold",
+        "answer2": "Galaxy Z Flip",
+        "answer3": "Galaxy Note Edge",
+        "correct": "Galaxy Fold"
+    },
+    {
+        "question": "ما هي لغة البرمجة المستخدمة في تطوير تطبيقات أندرويد؟",
+        "answer1": "Java",
+        "answer2": "Kotlin",
+        "answer3": "Swift",
+        "correct": "Kotlin"
+    },
+    {
+        "question": "ما هو اسم أول معالج من Intel؟",
+        "answer1": "Intel 4004",
+        "answer2": "Intel 8086",
+        "answer3": "Intel Pentium",
+        "correct": "Intel 4004"
+    },
+    {
+        "question": "ما هو اسم أول هاتف يعمل بتقنية 5G؟",
+        "answer1": "Samsung Galaxy S10 5G",
+        "answer2": "Huawei Mate X",
+        "answer3": "LG V50 ThinQ",
+        "correct": "Samsung Galaxy S10 5G"
+    },
+    {
+        "question": "ما هي أقدم شبكة اجتماعية لا تزال تعمل؟",
+        "answer1": "Facebook",
+        "answer2": "MySpace",
+        "answer3": "LinkedIn",
+        "correct": "LinkedIn"
+    },
+    {
+        "question": "ما هو اسم أول كمبيوتر محمول من مايكروسوفت؟",
+        "answer1": "Surface Laptop",
+        "answer2": "Surface Pro",
+        "answer3": "Surface Book",
+        "correct": "Surface Laptop"
+    },
+    {
+        "question": "ما هي تقنية الشاشة التي توفر انحناءة كاملة؟",
+        "answer1": "OLED",
+        "answer2": "AMOLED",
+        "answer3": "Flexible OLED",
+        "correct": "Flexible OLED"
+    },
+    {
+        "question": "ما هو اسم أول هاتف يعمل بنظام تشغيل 'كاي أو إس' من بلاك بيري؟",
+        "answer1": "BlackBerry Bold",
+        "answer2": "BlackBerry Curve",
+        "answer3": "BlackBerry 850",
+        "correct": "BlackBerry 850"
+    },
+    {
+        "question": "ما هي الشركة التي طورت 'فوتوشوب'؟",
+        "answer1": "Adobe",
+        "answer2": "Corel",
+        "answer3": "Microsoft",
+        "correct": "Adobe"
+    },
+    {
+        "question": "ما هو اسم أول معالج رسوميات (GPU) من NVIDIA؟",
+        "answer1": "GeForce 256",
+        "answer2": "RIVA 128",
+        "answer3": "TNT",
+        "correct": "GeForce 256"
+    },
+    {
+        "question": "ما هي أقدم متصفحات الويب؟",
+        "answer1": "Internet Explorer",
+        "answer2": "Netscape Navigator",
+        "answer3": "Mosaic",
+        "correct": "Mosaic"
+    },
+    {
+        "question": "ما هو اسم أول هاتف يعمل بنظام 'ويندوز فون'؟",
+        "answer1": "Lumia 800",
+        "answer2": "HTC HD2",
+        "answer3": "Samsung Omnia",
+        "correct": "HTC HD2"
+    },
+    {
+        "question": "ما هي الشركة التي طورت 'ووردبريس'؟",
+        "answer1": "Automattic",
+        "answer2": "Matt Mullenweg",
+        "answer3": "Google",
+        "correct": "Automattic"
+    },
+    {
+        "question": "ما هو اسم أول هاتف يعمل بتقنية التعرف على الوجه؟",
+        "answer1": "iPhone X",
+        "answer2": "Samsung Galaxy S8",
+        "answer3": "Microsoft Lumia 950",
+        "correct": "iPhone X"
+    },
+    {
+        "question": "ما هي لغة البرمجة المستخدمة في تطوير الذكاء الاصطناعي؟",
+        "answer1": "Python",
+        "answer2": "Java",
+        "answer3": "C++",
+        "correct": "Python"
+    },
+    {
+        "question": "ما هو اسم أول كمبيوتر يعمل بشاشة لمس؟",
+        "answer1": "Microsoft Surface",
+        "answer2": "Apple Newton",
+        "answer3": "HP TouchSmart",
+        "correct": "Apple Newton"
+    },
+    {
+        "question": "ما هو اسم أول هاتف يعمل بتقنية الشحن اللاسلكي؟",
+        "answer1": "Nokia Lumia 920",
+        "answer2": "Samsung Galaxy S6",
+        "answer3": "iPhone 8",
+        "correct": "Nokia Lumia 920"
+    },
+    {
+        "question": "ما هي أقدم لغة برمجة نصية (Scripting Language)?",
+        "answer1": "JavaScript",
+        "answer2": "Perl",
+        "answer3": "Python",
+        "correct": "Perl"
+    },
+    {
+        "question": "ما هو اسم أول معالج من Apple Silicon؟",
+        "answer1": "M1",
+        "answer2": "A4",
+        "answer3": "A12X",
+        "correct": "M1"
+    },
+    {
+        "question": "ما هو اسم أول هاتف يعمل بنظام 'فاير أو إس'؟",
+        "answer1": "HP Pre 3",
+        "answer2": "Palm Pre",
+        "answer3": "LG webOS",
+        "correct": "Palm Pre"
+    },
+    {
+        "question": "ما هي أقدم لغة برمجة كائنية التوجه (OOP)?",
+        "answer1": "C++",
+        "answer2": "Java",
+        "answer3": "Smalltalk",
+        "correct": "Smalltalk"
+    },
+    {
+        "question": "ما هو اسم أول معالج 64-bit من Intel؟",
+        "answer1": "Pentium 4",
+        "answer2": "Itanium",
+        "answer3": "Xeon",
+        "correct": "Itanium"
+    }
+]
