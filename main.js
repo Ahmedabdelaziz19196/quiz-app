@@ -117,7 +117,9 @@ function submitClick(theQuestions, thecategory) {
             clearInterval(countdownInterval);
             countdown(TIME, QUESTIONNUMBER);
             if (currentQuestion === QUESTIONNUMBER) {
-                setResult();
+                setTimeout(() => {
+                    setResult();
+                }, 1000);
             }
         }
     });
