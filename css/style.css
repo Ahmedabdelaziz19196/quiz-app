@@ -1,0 +1,575 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Cairo", sans-serif;
+    direction: rtl;
+    background-color: #1a1a1a;
+    height: 100%;
+    transition: background 0.2s linear;
+}
+body.light {
+    background-color: white;
+}
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 345px;
+    }
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.container {
+    background-color: #323232;
+    position: relative;
+    /* Start header */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1a1a1a;
+        padding: 15px;
+        border-radius: 17px;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        flex-direction: row-reverse;
+        h1 {
+            color: white;
+            margin: 0;
+        }
+        .toggle {
+            .checkbox {
+                opacity: 0;
+                position: absolute;
+            }
+            .checkbox-label {
+                background-color: #111;
+                width: 50px;
+                height: 26px;
+                border-radius: 50px;
+                position: relative;
+                padding: 5px;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .fa-moon {
+                color: #f1c40f;
+            }
+            .fa-sun {
+                color: #f39c12;
+            }
+            .checkbox-label .ball {
+                background-color: #fff;
+                width: 22px;
+                height: 22px;
+                position: absolute;
+                left: 2px;
+                top: 2px;
+                border-radius: 50%;
+                transition: transform 0.2s linear;
+            }
+            .checkbox:checked + .checkbox-label .ball {
+                transform: translateX(24px);
+            }
+        }
+    }
+    /* Start Choose page */
+    .choose-page {
+        height: calc(100% - 121px);
+        display: block;
+        .text {
+            margin-top: 15px;
+            text-align: right;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .category {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            gap: 10px;
+            button {
+                border: none;
+                display: flex;
+                justify-content: center;
+                padding: 0.75rem 1.5rem;
+                color: #ffffff;
+                font-size: 0.75rem;
+                line-height: 1rem;
+                font-weight: 700;
+                cursor: pointer;
+                text-align: center;
+                align-items: center;
+                border-radius: 0.5rem;
+                user-select: none;
+                gap: 0.75rem;
+                box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
+                transition: all 0.6s ease;
+                height: 100%;
+                font-size: 18px;
+                font-weight: bold;
+                &.general {
+                    background-color: #90a4ae;
+                }
+                &.islamic {
+                    background-color: #66bb6a;
+                }
+                &.geography {
+                    background-color: #81c784;
+                }
+                &.history {
+                    background-color: #a1887f;
+                }
+                &.movies {
+                    background-color: #ba68c8;
+                }
+                &.sports {
+                    background-color: #e57373;
+                }
+                &.tech {
+                    background-color: #64b5f6;
+                }
+                &.riddles {
+                    background-color: #ffd54f;
+                }
+            }
+
+            button.general:hover {
+                box-shadow: 0 10px 15px -3px #90a4ae80, 0 4px 6px -2px #90a4ae40;
+            }
+            button.islamic:hover {
+                box-shadow: 0 10px 15px -3px #66bb6a80, 0 4px 6px -2px #66bb6a40;
+            }
+            button.geography:hover {
+                box-shadow: 0 10px 15px -3px #81c78480, 0 4px 6px -2px #81c78440;
+            }
+            button.history:hover {
+                box-shadow: 0 10px 15px -3px #a1887f80, 0 4px 6px -2px #a1887f40;
+            }
+            button.movies:hover {
+                box-shadow: 0 10px 15px -3px #ba68c880, 0 4px 6px -2px #ba68c840;
+            }
+            button.sports:hover {
+                box-shadow: 0 10px 15px -3px #e5737380, 0 4px 6px -2px #e5737340;
+            }
+            button.tech:hover {
+                box-shadow: 0 10px 15px -3px #64b5f680, 0 4px 6px -2px #64b5f640;
+            }
+            button.riddles:hover {
+                box-shadow: 0 10px 15px -3px #ffd54f80, 0 4px 6px -2px #ffd54f40;
+            }
+
+            button:focus,
+            button:active {
+                opacity: 0.85;
+                box-shadow: none;
+            }
+        }
+    }
+    /* Start quiz page */
+    .quizz-area {
+        height: calc(100% - 70px);
+        flex-direction: column;
+        display: none;
+        h2 {
+            color: white;
+            text-align: center;
+            line-height: 43px;
+        }
+        .answers {
+            p {
+                color: white;
+                font-weight: bold;
+                margin: 15px 0;
+                padding: 15px 10px;
+                border: 1px white solid;
+                background-color: #1a1a1a;
+                border-radius: 17px;
+                box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+                transition: 0.3s;
+                cursor: pointer;
+                text-align: center;
+                &.general-check {
+                    border-color: #90a4ae;
+                    color: #90a4ae;
+                }
+                &.islamic-check {
+                    border-color: #66bb6a;
+                    color: #66bb6a;
+                }
+                &.geography-check {
+                    border-color: #81c784;
+                    color: #66bb6a;
+                }
+                &.history-check {
+                    border-color: #a1887f;
+                    color: #a1887f;
+                }
+                &.movies-check {
+                    border-color: #ba68c8;
+                    color: #ba68c8;
+                }
+                &.sports-check {
+                    border-color: #e57373;
+                    color: #e57373;
+                }
+                &.tech-check {
+                    border-color: #64b5f6;
+                    color: #64b5f6;
+                }
+                &.riddles-check {
+                    border-color: #ffd54f;
+                    color: #ffd54f;
+                }
+                &.correct {
+                    border-color: #4caf50;
+                    color: #4caf50;
+                }
+                &.wrong {
+                    border-color: #f44336;
+                    color: #f44336;
+                }
+            }
+            p.general:hover {
+                border-color: #90a4ae;
+                color: #90a4ae;
+            }
+            p.islamic:hover {
+                border-color: #66bb6a;
+                color: #66bb6a;
+            }
+            p.geography:hover {
+                border-color: #81c784;
+                color: #66bb6a;
+            }
+            p.history:hover {
+                border-color: #a1887f;
+                color: #a1887f;
+            }
+            p.movies:hover {
+                border-color: #ba68c8;
+                color: #ba68c8;
+            }
+            p.sports:hover {
+                border-color: #e57373;
+                color: #e57373;
+            }
+            p.tech:hover {
+                border-color: #64b5f6;
+                color: #64b5f6;
+            }
+            p.riddles:hover {
+                border-color: #ffd54f;
+                color: #ffd54f;
+            }
+        }
+        .submit {
+            button {
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.75rem 1.5rem;
+                color: white;
+                cursor: pointer;
+                border-radius: 17px;
+                transition: all 0.6s ease;
+                height: 100%;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 15px 10px;
+                width: 100%;
+                margin-bottom: 15px;
+                &.general {
+                    background-color: #90a4ae;
+                }
+                &.islamic {
+                    background-color: #66bb6a;
+                }
+                &.geography {
+                    background-color: #81c784;
+                }
+                &.history {
+                    background-color: #a1887f;
+                }
+                &.movies {
+                    background-color: #ba68c8;
+                }
+                &.sports {
+                    background-color: #e57373;
+                }
+                &.tech {
+                    background-color: #64b5f6;
+                }
+                &.riddles {
+                    background-color: #ffd54f;
+                }
+                &.general:hover {
+                    background-color: #607d8b;
+                }
+                &.islamic:hover {
+                    background-color: #4caf50;
+                }
+                &.geography:hover {
+                    background-color: #4caf50;
+                }
+                &.history:hover {
+                    background-color: #6d4c41;
+                }
+                &.movies:hover {
+                    background-color: #7b1fa2;
+                }
+                &.sports:hover {
+                    background-color: #c62828;
+                }
+                &.tech:hover {
+                    background-color: #2196f3;
+                }
+                &.riddles:hover {
+                    background-color: #f9a825;
+                }
+            }
+        }
+        .count {
+            flex: 1;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            p {
+                padding: 61px 20px;
+                border-radius: 50%;
+                border: 5px white solid;
+                margin: 0;
+                position: relative;
+
+                &.general {
+                    border-color: #90a4ae;
+                }
+                &.islamic {
+                    border-color: #66bb6a;
+                }
+                &.geography {
+                    border-color: #81c784;
+                }
+                &.history {
+                    border-color: #a1887f;
+                }
+                &.movies {
+                    border-color: #ba68c8;
+                }
+                &.sports {
+                    border-color: #e57373;
+                }
+                &.tech {
+                    border-color: #64b5f6;
+                }
+                &.riddles {
+                    border-color: #ffd54f;
+                }
+            }
+
+            @media (max-width: 768px) {
+                p {
+                    padding: 10px;
+                    border-radius: 17px;
+                    margin-top: 10px;
+                    border-width: 2px;
+                }
+            }
+        }
+        @media (max-width: 768px) {
+            .count {
+                font-size: 35px;
+            }
+        }
+        .slider {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            /* width: 100%; */
+            height: 5px;
+            transition: all 0.3s;
+            &.general {
+                background-color: #90a4ae;
+            }
+            &.islamic {
+                background-color: #66bb6a;
+            }
+            &.geography {
+                background-color: #81c784;
+            }
+            &.history {
+                background-color: #a1887f;
+            }
+            &.movies {
+                background-color: #ba68c8;
+            }
+            &.sports {
+                background-color: #e57373;
+            }
+            &.tech {
+                background-color: #64b5f6;
+            }
+            &.riddles {
+                background-color: #ffd54f;
+            }
+        }
+    }
+    .result-area {
+        background-color: #1a1a1a;
+        padding: 20px;
+        text-align: center;
+        border-radius: 17px;
+        position: absolute;
+        width: 80%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        display: none;
+        .winner {
+            display: none;
+            img {
+                height: 107px;
+                width: 121px;
+            }
+            .result-text {
+                p {
+                    color: white;
+                    font-size: larger;
+                    font-weight: bold;
+                }
+            }
+        }
+        .average {
+            display: none;
+            img {
+                height: 107px;
+                width: 121px;
+            }
+            .result-text {
+                p {
+                    color: white;
+                    font-size: larger;
+                    font-weight: bold;
+                }
+            }
+        }
+        .loser {
+            display: none;
+            img {
+                height: 107px;
+                width: 121px;
+            }
+            .result-text {
+                p {
+                    color: white;
+                    font-size: larger;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+/* set light mode */
+body.light .container {
+    background-color: #eee;
+}
+
+body.light .header {
+    background-color: white;
+}
+body.light .choose-page .text,
+body.light .header h1 {
+    color: black;
+}
+
+body.light {
+    .category {
+        button {
+            &.general {
+                color: #111;
+            }
+            &.islamic {
+                color: #111;
+            }
+            &.geography {
+                color: #111;
+            }
+            &.history {
+                color: #111;
+            }
+            &.movies {
+                color: #111;
+            }
+            &.sports {
+                color: #111;
+            }
+            &.tech {
+                color: #111;
+            }
+            &.riddles {
+                color: #111;
+            }
+        }
+    }
+}
+
+body.light {
+    .quizz-area {
+        .question {
+            color: black;
+        }
+        .answers {
+            p {
+                color: black;
+            }
+        }
+        .submit {
+            color: black;
+        }
+        .count {
+            color: black;
+        }
+    }
+}
+
+body.light .quizz-area .answers p {
+    background-color: white;
+    border-color: black;
+}
+
+/* result area light mode */
+body.light .result-area {
+    background-color: white;
+}
+
+body.light .result-area .winner p,
+body.light .result-area .average p,
+body.light .result-area .loser p {
+    color: black !important;
+}
